@@ -175,4 +175,3 @@ curl -X GET "https://economic-wellbeing-explorer.services.smartdatafoundry.com/e
 ```
 ```
 
-Suggested filename: `myfoundry-data-api-guide.md`
