@@ -1,4 +1,4 @@
-```md
+
 # MyFoundry Data API - User Guide
 
 ## Overview
@@ -7,7 +7,7 @@ The MyFoundry Data API provides access to financial wellbeing data across geogra
 
 ## Base URL
 
-`https://economic-wellbeing-explorer.services.smartdatafoundry.com` [2]
+```https://economic-wellbeing-explorer.services.smartdatafoundry.com``` [2]
 
 ## Authentication
 
