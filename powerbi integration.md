@@ -1,6 +1,3 @@
-Here is the complete content of the HTML document converted into clean, well-structured Markdown text, preserving all tables, code snippets, notes, and hierarchical sections.
-
----
 
 # Using the MyFoundry Production Data API with Power BI
 
