@@ -3,7 +3,7 @@
 
 ## Purpose
 
-This document provides a customer-oriented description of each release phase for the Economic Wellbeing Explorer APIs. It explains how customers discover, access, integrate, and use the APIs as the service evolves from internal readiness through to full self-service access.
+This document provides a description of each release phase for the Economic Wellbeing Explorer APIs. It explains how customers discover, access, integrate, and use the APIs as the service evolves from internal readiness through to full self-service access.
 
 The release approach is phased so that customers receive the right level of support at each stage, while the product matures towards a scalable and independent self-service model.
 
