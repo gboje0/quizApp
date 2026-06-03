@@ -1,15 +1,5 @@
-Yes — the attached document is a good start and it does explain the API releases from a customer perspective, especially because it describes the experience for Public Sector partners and Researchers across Releases 2–4 [1]. However, I would recommend strengthening it before sharing with your manager because:
 
-- It is currently more of a release overview than a complete user journey document.
-- It does describe customer experience, but some sections could be made more explicitly customer-oriented.
-- It answers your manager’s request in principle, but it would benefit from clearer wording around “what the customer can do,” “what support they receive,” and “how the experience changes release by release.”
-- Release 1 is internal-facing, so it should be made clear that there is no external customer journey at that stage [1].
-
-Below is a revised version you can use.
-
----
-
-# EWE API Release Overview — Customer-Oriented Journey
+# EWE API Release Overview — Customer Journey
 
 ## Purpose
 
@@ -38,7 +28,7 @@ This approach supports both Public Sector partners and Researchers, while reduci
 
 - Internal teams preparing the APIs for external release.
 
-## Customer-Oriented Description
+## Description
 
 At this stage, the APIs are not yet available to external customers. The focus is on ensuring that the API foundation is stable, reliable, and ready for future customer use.
 
@@ -58,40 +48,40 @@ This release creates the technical foundation needed to provide customers with r
 
 # Release 2: Controlled Access via Manual Onboarding
 
-## Who This Is For
+## Personas
 
 - Public Sector partners.
-- Researchers who are early adopters, typically reached through marketing or direct engagement.
+- Researchers who are early adopters, typically reached through hubspot or direct engagement.
 
-## Customer-Oriented Description
+## Description
 
 In Release 2, customers can begin to access the APIs, but the experience is guided and manually managed. This is designed to support early users closely while ensuring appropriate vetting, approvals, and setup.
 
 Public Sector partners are supported through a dedicated SDF contact. This means they do not need to navigate the process alone; they can request access, receive guidance, and be supported through onboarding.
 
-Researchers discover the APIs through marketing or outreach activity. They complete a vetting process and then receive documentation and API keys manually, typically by email [1].
+Researchers discover the APIs through TRE access request for research or outreach activity. They complete a vetting process and then receive documentation and API keys manually, typically by email.
 
 ## Customer Experience
 
 ### Public Sector Partners
 
 - Customer contacts SDF or is engaged through an existing relationship.
-- Access request and approval are handled manually.
+- API access request and approval are handled manually.
 - Documentation and API keys are provided with support.
 - Customer receives guided onboarding and help with initial integration.
 
 ### Researchers
 
-- Customer discovers the APIs through marketing or outreach.
-- Customer completes vetting or approval steps.
+- Customer discovers the APIs through TRE access request.
+- Customer completes vetting or DAC process.
 - Documentation and API keys are provided manually by email.
 - Customer can begin exploring the data and testing analytical use cases.
 
 ## What This Enables for Customers
 
-Release 2 allows trusted early customers to start using the APIs with close support. Public Sector partners can begin integration with guidance, while Researchers can explore the data and validate early use cases [1].
+Release 2 allows trusted early customers to start using the APIs with close support. Public Sector partners can begin integration with guidance, while Researchers can explore the data and validate early use cases.
 
-## Customer Benefit
+## Benefit
 
 - High-touch onboarding.
 - Clear support route.
@@ -102,14 +92,14 @@ Release 2 allows trusted early customers to start using the APIs with close supp
 
 # Release 3: Subscription-Based Access with Manual Documentation
 
-## Who This Is For
+## Personas
 
-- Public Sector partners who are scaling their API usage.
-- Researchers with approved access who want to expand their usage.
+- Public Sector partners.
+- Researchers with approved access.
 
-## Customer-Oriented Description
+## Description
 
-In Release 3, the customer experience becomes more self-service. Customers no longer rely entirely on manual support to gain access. They can subscribe to APIs and generate API keys independently, although documentation is still provided manually by email [1].
+In Release 3, the customer experience becomes more self-service. Customers no longer rely entirely on manual support to gain access. They can generate API keys independently, although subscription to APIs and documentation is still done manually.
 
 This release gives customers more control and reduces delays, while still maintaining some guided support where needed.
 
@@ -117,27 +107,32 @@ This release gives customers more control and reduces delays, while still mainta
 
 ### Public Sector Partners
 
-- Customer continues to receive support through an SDF contact where required.
+- Customer contacts SDF or is engaged through an existing relati
+- API access request and approval are handled manually.
+- API subscription is granted.
 - Customer has more independence than in Release 2.
+- Documentation is provided by email.
 - API keys can be generated through MyFoundry.
-- Manual support is still available for questions, onboarding, and scaling usage.
+- Manual support is available for questions, onboarding, and scaling usage.
 
 ### Researchers
-
-- Customer can subscribe to APIs.
+ 
+- Customer discovers the APIs through TRE access request.
+- Customer completes vetting or DAC process.
+- API subscription based on researchers needs are granted
 - Customer can generate API keys independently.
-- Documentation is still provided by email.
+- Documentation is provided by email.
+- Customer can begin exploring the data and testing analytical use cases.
 - Customer can expand usage more quickly without waiting for every access step to be handled manually.
 
 ## What This Enables for Customers
 
-Release 3 provides faster onboarding, better control over API access, and reduced reliance on manual processes [1].
+Release 3 provides faster onboarding, better control over API access, and reduced reliance on manual processes.
 
-## Customer Benefit
+## Benefit
 
 - Faster access to API keys.
 - More independence.
-- Less waiting for manual setup.
 - Better suited for customers moving from testing into broader usage.
 
 ---
@@ -146,12 +141,12 @@ Release 3 provides faster onboarding, better control over API access, and reduce
 
 ## Who This Is For
 
-- Public Sector partners who need independent and scalable access.
-- Researchers who want to explore, understand, and use APIs without manual onboarding.
+- Public Sector partners.
+- Researchers.
 
-## Customer-Oriented Description
+## Description
 
-Release 4 provides the full customer self-service experience. Customers can independently discover available APIs, review documentation online, and generate API keys without needing to contact SDF or wait for manual email support [1].
+Release 4 provides the full customer self-service experience. Customers can independently discover available APIs, review documentation online, and generate API keys once API subscribtion has been granted.
 
 This is the target customer experience: fast, scalable, and easy to use.
 
@@ -175,7 +170,7 @@ This is the target customer experience: fast, scalable, and easy to use.
 
 Release 4 enables immediate API access, faster integration, and scalable adoption across users and organisations [1].
 
-## Customer Benefit
+## Benefit
 
 - Full self-service access.
 - Faster time to value.
@@ -201,35 +196,11 @@ Release 4 enables immediate API access, faster integration, and scalable adoptio
 | Release | Customer Experience |
 |---|---|
 | Release 1 | No external access; APIs are prepared internally. |
-| Release 2 | Marketing-led discovery, vetting, and manual onboarding. |
+| Release 2 | project-led discovery, vetting, and manual onboarding. |
 | Release 3 | Subscription access and partial self-service API key generation. |
 | Release 4 | Full self-service discovery, documentation, and API usage. |
 
 ---
 
-# Key Message for Stakeholders
-
 The API release approach is designed to progressively improve the customer experience. Early releases provide controlled, supported access to reduce risk and help early users onboard successfully. Later releases reduce manual steps and move towards a fast, scalable, self-service model where customers can discover APIs, access documentation, generate keys, and begin using the service independently.
 
----
-
-# Does This Answer the Manager’s Question?
-
-Yes. With the updates above, the document directly answers the request for “a customer-oriented description of each of the releases.”
-
-The revised version makes the customer perspective clearer by explaining:
-
-- Who each release is for.
-- What the customer can do in each release.
-- What support the customer receives.
-- What limitations remain in each phase.
-- How the experience improves over time.
-- How the journey differs for Public Sector partners and Researchers.
-
----
-
-# Suggested Reply to Your Manager
-
-You could send this:
-
-> Yes, the API releases document has been updated and is ready for review today. I have revised it to make each release more customer-oriented, with clearer descriptions of what Public Sector partners and Researchers experience at each stage. The document now explains how customers discover the APIs, access documentation, receive or generate API keys, and move from guided onboarding to full self-service access across the release phases.
