@@ -71,9 +71,19 @@ All endpoints support optional query parameters for geographic, temporal, demogr
 
 | Parameter | Type | Description | Example |
 |---|---|---|---|
-| `geographicLevel` | string | Geographic level. Supported values include `itl1`, `itl2`, `itl3`, and `la`. | `itl1` |
+| `geographicLevel` | string | Geographic level. Supported values include `itl1`, `itl2`, `itl3`, `iz`, and `la`. | `itl1` |
 | `areas` | string | Comma-separated list of area IDs. | `E12000001,E12000002` |
 | `boundingBox` | string | Spatial filter in the format `minLng,minLat,maxLng,maxLat`. | `-3.21344,55.94535,-3.15828,55.96247` |
+
+**Note**
+| Level| Example |
+|---|---|
+| ITL1 | Scotland, Wales, regions of England |
+| ITL2 | Eastern Scotland, North East England |
+| ITL3 | Angus & Dundee, Aberdeen City |
+| LA (Local Authority) | Council areas |
+| IZ (Intermediate Zone) | Scotland-only, sub-LA |
+| DZ (Data Zone) | Scotland-only, smallest |
 
 ### Temporal Filtering
 
