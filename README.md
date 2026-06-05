@@ -35,9 +35,9 @@ GET /overdrawn-accounts
 curl -X GET "https://economic-wellbeing-explorer.services.smartdatafoundry.com/overdrawn-accounts?geographicLevel=itl1&date=2023-01-01" -H "X-MyFoundry-User-Api-Key: <your API key>"
 ```
 
-### 2. Emergency Resilience
+### 2. Low Emergency Resilience
 
-Access emergency financial resilience metrics. [2]
+Access low emergency resilience metrics. [2]
 
 **Endpoint**
 ```http
@@ -184,6 +184,5 @@ curl -X GET "https://economic-wellbeing-explorer.services.smartdatafoundry.com/o
 
 ```bash
 curl -X GET "https://economic-wellbeing-explorer.services.smartdatafoundry.com/emergency-resilience?page=2&size=50" -H "X-MyFoundry-User-Api-Key: <your API key>"
-```
 ```
 
