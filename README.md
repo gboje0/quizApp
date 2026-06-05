@@ -3,7 +3,13 @@
 
 ## Overview
 
-The MyFoundry Data API provides access to financial wellbeing data across geographic regions in the UK. The API offers insights into: overdrawn accounts, emergency financial resilience, and living beyond means indicators. All data can be filtered by geographic level, time periods, demographics, and spatial boundaries. [2]
+The MyFoundry Data API provides access to financial wellbeing data across geographic regions in the UK. The API offers insights into: 
+
+- Overdrawn accounts
+- Low emergency resilience
+- Living beyond means indicators.
+
+All data can be filtered by geographic level, time periods, demographics, and spatial boundaries. [2]
 
 ## Base URL
 
@@ -140,6 +146,29 @@ All successful responses return a `200 OK` status and follow this general struct
   }
 }
 ```
+## Response Fields
+
+### Data Object Fields
+- **id**: Unique identifier for the record
+- **geom**: Geometry coordinates [longitude, latitude]
+- **name**: Geographic area name
+- **itl1Id**: ITL1 region identifier
+- **itl2Id**: ITL2 region identifier
+- **localAuthorityId**Local authority identifier
+- **date**: Date of the data point
+- **ageBand**: Age band category
+- **incomeBand**: Income band category
+- **Metric field**: The specific metric varies by endpoint (overdraft, emergencyResilience, beyondMeans)
+
+### Metadata Object
+- **totalResults**: Total number of results across all pages
+- **totalPages**: Total number of pages available
+- **page**: Current page number
+- **size**: Number of results per page
+- **first**: URL to the first page
+- **last**: URL to the last page
+- **next**: URL to the next page (null if on last page)
+- **previous**: URL to the previous page (null if on first page)
 
 ## Error Codes
 
