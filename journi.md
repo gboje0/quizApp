@@ -1,4 +1,4 @@
-# MyFoundry API Feature - Customer Journey Map
+# MyFoundry API - Customer Journey Map
 
 ---
 
