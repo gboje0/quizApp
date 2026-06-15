@@ -223,7 +223,7 @@ curl -X GET "https://economic-wellbeing-explorer.services.smartdatafoundry.com/e
 
 Example pagination flow:
 
-```bash
+```py
 import requests
 
 base_url = "https://myfoundry-data-api.dev.services.smartdatafoundry.com"
