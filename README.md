@@ -214,4 +214,32 @@ curl -X GET "https://economic-wellbeing-explorer.services.smartdatafoundry.com/o
 ```bash
 curl -X GET "https://economic-wellbeing-explorer.services.smartdatafoundry.com/emergency-resilience?page=2&size=50" -H "X-MyFoundry-User-Api-Key: <your API key>"
 ```
+### Pagination Best Practices
 
+- ** Start with page 1** and use the metadata.next URL to navigate to subsequent pages
+- ** Check metadata.totalPages** to determine how many pages are available
+- ** Use reasonable page sizes** (default is 10000, but smaller sizes may improve performance)
+- ** Handle empty results** - A 204 status code indicates no data matches your criteria
+
+Example pagination flow:
+
+```bash
+import requests
+base_url = "https://myfoundry-data-api.dev.services.smartdatafoundry.com"
+headers = {"Authorization": f"Bearer {token}"}
+all_data = []
+
+# Start with page 1
+response = requests.get(f"{base_url}/overdrawn-accounts?page=1&size=100", headers=headers)
+result = response.json()
+
+all_data.extend(result['data'])
+
+# Continue while there's a next page
+while result['metadata'].get('next'):
+    response = requests.get(result['metadata']['next'], headers=headers)
+    result = response.json()
+    all_data.extend(result['data'])
+
+print(f"Retrieved {len(all_data)} total records")
+```
