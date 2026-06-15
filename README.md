@@ -225,6 +225,7 @@ Example pagination flow:
 
 ```bash
 import requests
+
 base_url = "https://myfoundry-data-api.dev.services.smartdatafoundry.com"
 headers = {"Authorization": f"Bearer {token}"}
 all_data = []
@@ -243,3 +244,28 @@ while result['metadata'].get('next'):
 
 print(f"Retrieved {len(all_data)} total records")
 ```
+## Parameter Validation Rules
+
+### Date Formats
+- **Single date:**  `YYYY-MM-DD` (e.g., `2023-01-01`)
+- **Date range:** `YYYY-MM-DD:YYYY-MM-DD` (e.g., `2023-01-01:2023-12-31`)
+
+### Geographic Levels
+Valid values: `itl1`, `itl2`, `itl3`, `iz`, `la`
+
+### Age Bands
+Valid values: `18-25`, `26-35`, `36-50`, `51-65`, `65+`, `all`
+
+### Bounding Box Format
+Format: `minLongitude,minLatitude,maxLongitude,maxLatitude`
+Example: `-3.21344,55.94535,-3.15828,55.96247`
+
+## Tips and Best Practices
+1. **Cache your JWT token** - Tokens are valid for 300 seconds (5 minutes) based on the authorizer configuration
+2. **Handle rate limiting** - Implement exponential backoff if you receive 429 responses
+3. **Use appropriate page sizes** - Smaller page sizes (100-1000) provide better response times
+4. **Filter data at the API level** - Use query parameters rather than fetching all data and filtering client-side
+5. **Check for 204 responses** - Empty results return 204 No Content, not 200 with empty array
+6. **Use the correlationId** - Include this in any support requests for faster troubleshooting
+7. **Validate parameters** - The API validates all parameters; invalid requests return 400 with details
+8. **Respect CORS policies** - The API allows GET and OPTIONS methods from any origin
