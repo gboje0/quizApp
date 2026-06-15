@@ -258,6 +258,7 @@ Valid values: `18-25`, `26-35`, `36-50`, `51-65`, `65+`, `all`
 
 ### Bounding Box Format
 Format: `minLongitude,minLatitude,maxLongitude,maxLatitude`
+
 Example: `-3.21344,55.94535,-3.15828,55.96247`
 
 ## Tips and Best Practices
