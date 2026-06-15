@@ -216,10 +216,10 @@ curl -X GET "https://economic-wellbeing-explorer.services.smartdatafoundry.com/e
 ```
 ### Pagination Best Practices
 
-- ** Start with page 1** and use the metadata.next URL to navigate to subsequent pages
-- ** Check metadata.totalPages** to determine how many pages are available
-- ** Use reasonable page sizes** (default is 10000, but smaller sizes may improve performance)
-- ** Handle empty results** - A 204 status code indicates no data matches your criteria
+- **Start with page 1** and use the metadata.next URL to navigate to subsequent pages
+- **Check metadata.totalPages** to determine how many pages are available
+- **Use reasonable page sizes** (default is 10000, but smaller sizes may improve performance)
+- **Handle empty results** - A 204 status code indicates no data matches your criteria
 
 Example pagination flow:
 
