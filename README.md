@@ -262,11 +262,10 @@ Format: `minLongitude,minLatitude,maxLongitude,maxLatitude`
 Example: `-3.21344,55.94535,-3.15828,55.96247`
 
 ## Tips and Best Practices
-1. **Cache your JWT token** - Tokens are valid for 300 seconds (5 minutes) based on the authorizer configuration
-2. **Handle rate limiting** - Implement exponential backoff if you receive 429 responses
-3. **Use appropriate page sizes** - Smaller page sizes (100-1000) provide better response times
-4. **Filter data at the API level** - Use query parameters rather than fetching all data and filtering client-side
-5. **Check for 204 responses** - Empty results return 204 No Content, not 200 with empty array
-6. **Use the correlationId** - Include this in any support requests for faster troubleshooting
-7. **Validate parameters** - The API validates all parameters; invalid requests return 400 with details
-8. **Respect CORS policies** - The API allows GET and OPTIONS methods from any origin
+1. **Handle rate limiting** - Implement exponential backoff if you receive 429 responses
+2. **Use appropriate page sizes** - Smaller page sizes (100-1000) provide better response times
+3. **Filter data at the API level** - Use query parameters rather than fetching all data and filtering client-side
+4. **Check for 204 responses** - Empty results return 204 No Content, not 200 with empty array
+5. **Use the correlationId** - Include this in any support requests for faster troubleshooting
+6. **Validate parameters** - The API validates all parameters; invalid requests return 400 with details
+7. **Respect CORS policies** - The API allows GET and OPTIONS methods from any origin
