@@ -168,7 +168,7 @@ All endpoints support optional query parameters for geographic, temporal, demogr
 
 | Parameter | Description | Example |
 | --- | --- | --- |
-| `geographicLevel` | Geographic level. Supported values include `itl1`, `itl2`, `itl3`, and `la`. | `itl1` |
+| `geographicLevel` | Geographic level. Supported values include `itl1`, `itl2`, `itl3`, `la`, and `iz`. | `itl1` |
 | `areas` | Comma-separated list of area IDs. | `E12000001,E12000002` |
 | `boundingBox` | Spatial filter in the format `minLng,minLat,maxLng,maxLat`. | `-3.21344,55.94535,-3.15828,55.96247` |
 
