@@ -9,7 +9,7 @@ The MyFoundry Data API provides access to financial wellbeing data across geogra
 - Low emergency resilience
 - Living beyond means indicators.
 
-All data can be filtered by geographic level, time periods, demographics, and spatial boundaries. [2]
+All data can be filtered by geographic level, time periods, demographics, and spatial boundaries.
 
 ## Base URL
 
@@ -29,7 +29,7 @@ X-MyFoundry-User-Api-Key: <your API key>
 
 ### 1. Overdrawn Accounts
 
-Retrieve data about overdrawn accounts across geographic areas. [2]
+Retrieve data about overdrawn accounts across geographic areas.
 
 **Endpoint**
 ```http
@@ -43,7 +43,7 @@ curl -X GET "https://economic-wellbeing-explorer.services.smartdatafoundry.com/o
 
 ### 2. Low Emergency Resilience
 
-Access low emergency resilience metrics. [2]
+Access low emergency resilience metrics.
 
 **Endpoint**
 ```http
@@ -57,7 +57,7 @@ curl -X GET "https://economic-wellbeing-explorer.services.smartdatafoundry.com/e
 
 ### 3. Living Beyond Means
 
-Query data about individuals living beyond their means. [2]
+Query data about individuals living beyond their means.
 
 **Endpoint**
 ```http
@@ -71,7 +71,7 @@ curl -X GET "https://economic-wellbeing-explorer.services.smartdatafoundry.com/l
 
 ## Query Parameters
 
-All endpoints support optional query parameters for geographic, temporal, demographic, and pagination filtering. [1][2]
+All endpoints support optional query parameters for geographic, temporal, demographic, and pagination filtering. 
 
 ### Geographic Filtering
 
@@ -98,7 +98,7 @@ All endpoints support optional query parameters for geographic, temporal, demogr
 | `date` | string | Single date in `YYYY-MM-DD` format. Cannot be used with `dateRange`. | `2023-01-01` |
 | `dateRange` | string | Date range in `YYYY-MM-DD:YYYY-MM-DD` format. Cannot be used with `date`. | `2023-01-01:2023-12-31` |
 
-**Note:** You can use either `date` or `dateRange`, but not both. [1][2]
+**Note:** You can use either `date` or `dateRange`, but not both.
 
 ### Demographic Filtering
 
@@ -116,7 +116,7 @@ All endpoints support optional query parameters for geographic, temporal, demogr
 
 ## Response Structure
 
-All successful responses return a `200 OK` status and follow this general structure. [1][2]
+All successful responses return a `200 OK` status and follow this general structure.
 
 ```json
 {
