@@ -77,7 +77,7 @@ All endpoints support optional query parameters for geographic, temporal, demogr
 
 | Parameter | Type | Description | Example |
 |---|---|---|---|
-| `geographicLevel` | string | Geographic level. Supported values include `itl1`, `itl2`, `itl3`, `iz`, and `la`. | `itl1` |
+| `geographicLevel` | string | Geographic level. Supported values include `itl1`, `itl2`, `iz`, and `la`. | `itl1` |
 | `areas` | string | Comma-separated list of area IDs. | `E12000001,E12000002` |
 | `boundingBox` | string | Spatial filter in the format `minLng,minLat,maxLng,maxLat`. | `-3.21344,55.94535,-3.15828,55.96247` |
 
@@ -86,10 +86,8 @@ All endpoints support optional query parameters for geographic, temporal, demogr
 |---|---|
 | ITL1 | Scotland, Wales, regions of England |
 | ITL2 | Eastern Scotland, North East England |
-| ITL3 | Angus & Dundee, Aberdeen City |
 | LA (Local Authority) | Council areas |
-| IZ (Intermediate Zone) | Scotland-only, sub-LA |
-| DZ (Data Zone) | Scotland-only, smallest |
+| IZ (Intermediate Zone / MSOA) | sub-LA |
 
 ### Temporal Filtering
 
@@ -105,7 +103,7 @@ All endpoints support optional query parameters for geographic, temporal, demogr
 | Parameter | Type | Description | Example |
 |---|---|---|---|
 | `ageBand` | string | Age band filter. Supported values include `18-25`, `26-35`, `36-50`, `51-65`, `65+`, and `all`. | `18-25` |
-| `incomeBand` | string | Income band filter. Use a specific income band value or `all`. | `all` |
+| `incomeBand` | string | Income band filter. Use a specific income band value (`<24k`, `24k - 39999`, `40k+` or `all`. | `all` |
 
 ### Pagination
 
@@ -251,7 +249,7 @@ print(f"Retrieved {len(all_data)} total records")
 - **Date range:** `YYYY-MM-DD:YYYY-MM-DD` (e.g., `2023-01-01:2023-12-31`)
 
 ### Geographic Levels
-Valid values: `itl1`, `itl2`, `itl3`, `iz`, `la`
+Valid values: `itl1`, `itl2`, `iz`, `la`
 
 ### Age Bands
 Valid values: `18-25`, `26-35`, `36-50`, `51-65`, `65+`, `all`
