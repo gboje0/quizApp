@@ -1,7 +1,7 @@
 # EWE API – Customer Onboarding and Interaction Overview
 
 **Document Scope:** Multi-Release Roadmap (Phases 2 through 4)  
-**Target Audience:** Internal Stakeholders, Platform Team, and SDF Partners
+**Target Audience:** Internal Stakeholders
 
 ---
 
@@ -146,11 +146,11 @@ There are no prior onboarding processes before Phase 2; therefore, all steps des
 
 ## 4.6 Ongoing Customer Interaction
 After onboarding:
-* Customers authenticate using API keys (static in Phase 2, self-generated/managed via MyFoundry in Phase 3 and Phase 4).
+* Customers authenticate using API keys (static in Phase 2, user generated via MyFoundry in Phase 3 and Phase 4).
 * API usage is driven by customer applications (e.g., dashboards, research tools).
-* There is no self-service key rotation or management in Phase 2; this capability becomes fully active in Phase 3 and Phase 4 via MyFoundry.
+* There is a 30days expiration of API keys in Phase 2;.
 * Errors and issues are resolved via SDF contacts and Platform team support.
-* Documentation is static and shared manually in Phase 2 and Phase 3, and becomes dynamic on MyFoundry in Phase 4.
+* Documentation is static and shared manually in Phase 2 and Phase 3, and becomes available in real time on MyFoundry in Phase 4.
 
 ---
 
@@ -161,7 +161,7 @@ After onboarding:
 * Users are expected to use the provided API documentation (emailed or portal-hosted) to guide setup and testing.
 * Users should validate their integration using API testing tools (e.g., Postman, Insomnia).
 * Users are expected to engage the Platform team via SDF contacts for support and issue resolution.
-* Public sector partners are expected to integrate the API into dashboards or operational tools.
+* Public sector partners are expected to integrate the API into dashboards.
 * Researchers are expected to use API data strictly within the scope of their approved research.
 
 ---
@@ -173,19 +173,17 @@ Expected outcomes:
 * Enables first-time access to EWE data via API for both public sector partners and researchers.
 * Supports a controlled and high-touch onboarding approach for early adopters, transitioning smoothly into faster onboarding and greater control.
 * Allows the Platform team to closely monitor usage and gather feedback.
-* Provides a foundation for future iterations, including the complete automation of onboarding and documentation delivery on MyFoundry.
+
 
 ---
 
 ## 7. Backward Compatibility / Existing Customers
-Phase 2 is the first release of the API, and there are no existing customers or prior onboarding processes. Phase 3 and Phase 4 maintain backward compatibility by keeping manual onboarding workflows available as an alternative pathway.
+There are no changes to the API specification or use cases in any of the release, only the onboarding process changes in phase 3 and 4
 
 ---
 
 ## 8. Risks and Considerations
 * Manual distribution of API keys (Phase 2) and documentation (Phase 2 and Phase 3) introduces operational overhead and potential security risks.
-* Users may require additional support due to the absence of guided onboarding tools in early phases.
-* Variability in onboarding experience depending on SDF contact handling prior to full portal automation.
 
 ---
 
@@ -193,9 +191,7 @@ Phase 2 is the first release of the API, and there are no existing customers or 
 * Time to onboard a customer (request → access granted / key generation).
 * Number of onboarded customers per persona.
 * API usage (calls per customer).
-* Support tickets during onboarding.
 * % of successful initial integrations.
-* % of users utilizing self-service key generation (Phase 3 and Phase 4).
 
 ---
 
