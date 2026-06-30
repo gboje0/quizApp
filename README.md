@@ -102,7 +102,7 @@ All endpoints support optional query parameters for geographic, temporal, demogr
 
 | Parameter | Type | Description | Example |
 |---|---|---|---|
-| `ageBand` | string | Age band filter. Supported values include `18-25`, `26-35`, `36-50`, `51-65`, `65+`, and `all`. | `18-25` |
+| `ageBand` | string | Age band filter. Supported values include `18-39`, `40-69`, `70+`, and `all`. | `18-39` |
 | `incomeBand` | string | Income band filter. Use a specific income band value (`<24k`, `24k - 39999`, `40k+` or `all`. | `all` |
 
 ### Pagination
