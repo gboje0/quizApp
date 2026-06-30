@@ -103,7 +103,7 @@ All endpoints support optional query parameters for geographic, temporal, demogr
 | Parameter | Type | Description | Example |
 |---|---|---|---|
 | `ageBand` | string | Age band filter. Supported values include `18-39`, `40-69`, `70+`, and `all`. | `18-39` |
-| `incomeBand` | string | Income band filter. Use a specific income band value (`<24k`, `24k - 39999`, `40k+` or `all`. | `all` |
+| `incomeBand` | string | Income band filter. Use a specific income band value `<24k`, `24k - 39999`, `40k+` or `all` | `all` |
 
 ### Pagination
 
@@ -152,7 +152,7 @@ All successful responses return a `200 OK` status and follow this general struct
 - **name**: Geographic area name
 - **itl1Id**: ITL1 region identifier
 - **itl2Id**: ITL2 region identifier
-- **localAuthorityId**Local authority identifier
+- **localAuthorityId** :Local authority identifier
 - **date**: Date of the data point
 - **ageBand**: Age band category
 - **incomeBand**: Income band category
@@ -252,7 +252,7 @@ print(f"Retrieved {len(all_data)} total records")
 Valid values: `itl1`, `itl2`, `iz`, `la`
 
 ### Age Bands
-Valid values: `18-25`, `26-35`, `36-50`, `51-65`, `65+`, `all`
+Valid values: `18-39`, `40-69`, `70+`, `all`
 
 ### Bounding Box Format
 Format: `minLongitude,minLatitude,maxLongitude,maxLatitude`
