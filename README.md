@@ -19,7 +19,7 @@ https://economic-wellbeing-explorer.services.smartdatafoundry.com
 
 ## Authentication
 
-The API uses API key authentication. All requests require a valid API key in the `X-MyFoundry-User-Api-Key` header. API keys can be generated in the settings section of the MyFoundry platform. [2]
+The API uses API key authentication. All requests require a valid API key in the `X-MyFoundry-User-Api-Key` header. API keys can be generated in the settings section of the MyFoundry platform.
 
 ```bash
 X-MyFoundry-User-Api-Key: <your API key>
