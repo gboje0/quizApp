@@ -1,5 +1,5 @@
 
-# MyFoundry Data API - User Guide
+# MyFoundry Data API - User Reference
 
 ## Overview
 
